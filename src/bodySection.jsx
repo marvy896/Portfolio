@@ -14,6 +14,7 @@ export default function BodySection() {
             // height={100}
             className="myImage2"
           />
+          <h3>View our current Post in our blog</h3>
         </div>
         <div className="bodySectionChild2">
           <div className="FirstDiv1">Latest Project</div>

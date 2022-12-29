@@ -72,6 +72,11 @@
   align-items: center;
   justify-content: center;
 }
+.FirstDiv1:hover{
+  background-color: rgb(246, 246, 244);
+  color: black;
+}
+
 .FirstDiv:hover{
   background-color: yellow;
   color: black;
@@ -88,6 +93,7 @@
   border-radius: 20px;
 }
 .BigDivInner{
+  padding: 10px;
   font: 4em sans-serif;
   display: flex;
   flex-direction: row;
@@ -153,12 +159,11 @@
   padding: 10px;
   background-color: black;
   color: white;
-  height: 200px;
+  height: auto;
   width: 350px;
   border: 3px solid white;
   border-radius: 10px;
 }
-
 .bodySectionChild2 {
   padding: 5px;
   height: 150px;
@@ -213,4 +218,16 @@
   display: flex;
   align-items: center;
   padding: 0.25rem;
+}
+.bodyDivMain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5em;
+}
+.bodyDiv{
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
 }
