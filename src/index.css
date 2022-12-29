@@ -1,0 +1,124 @@
+*,
+*::before,
+*,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  color: white;
+  place-content: center;
+  box-sizing: border-box;
+  background-color: rgb(8, 8, 8);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.MainHead {
+  display: flex;
+  flex-direction: column;
+}
+.headDiv {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  gap: 4px;
+}
+.FirstDiv,
+.SecoundDiv {
+  position: relative;
+  height: 30px;
+  width: 250px;
+  border-radius: 20px;
+  border-color: rgb(249, 246, 246);
+  border-width: 10px;
+  border-width: 2px;
+  border: double;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BigDiv {
+  font: 4em sans-serif;
+  height: 200px;
+  width: 1000;
+  background: rgb(158, 154, 146);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6em;
+}
+.imgDiv {
+  height: 120px;
+  width: 120px;
+  border: 3px solid black;
+  border-radius: 100%;
+  background-image: url("img/doc.png") no-repeat;
+  /* background: black; */
+  position: relative;
+  /* align-items: center;
+    justify-content: center; */
+}
+.img {
+  height: 110px;
+  width: 90px;
+  /* background: url("img/doc.png") no-repeat; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+.bodySection {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+.bodySection1 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 2em;
+}
+.bodySectionChild1 {
+  background-color: black;
+  color: white;
+  height: 200px;
+  width: 350px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+.bodySectionChild2 {
+  height: 150px;
+  width: 350px;
+  background-color: rgb(254, 155, 7);
+  color: black;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+.bodySectionChild3 {
+  height: 150px;
+  width: 350px;
+  background-color: rgb(253, 46, 253);
+  color: black;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+.footerDiv{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  border: 3px solid white;
+}
+.footerDiv1{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
