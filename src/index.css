@@ -19,7 +19,31 @@
   display: flex;
   flex-direction: row;
   padding: 5px;
+  gap: 5em;
+  justify-content: space-between;
+}
+.headDiv1 {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
   gap: 4px;
+  
+}
+.contactDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Contact{
+  padding: 3px;
+  border: 2px solid white;
+  margin: 3px;
+  border-radius: 10px;
+}
+.Contact:hover{
+  background-color: yellow;
+  color: black;
 }
 .FirstDiv,
 .SecoundDiv {
@@ -35,38 +59,84 @@
   align-items: center;
   justify-content: center;
 }
+.FirstDiv1{
+  position: relative;
+  height: 30px;
+  width: 150px;
+  border-radius: 20px;
+  border-color: rgb(249, 246, 246);
+  border-width: 10px;
+  border-width: 2px;
+  border: double;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.FirstDiv:hover{
+  background-color: yellow;
+  color: black;
+}
+.SecoundDiv:hover{
+  background-color: rgb(250, 250, 248);
+  color: black;
+}
 .BigDiv {
-  font: 4em sans-serif;
+  padding: 10px;
   height: 200px;
   width: 1000;
   background: rgb(158, 154, 146);
   border-radius: 20px;
+}
+.BigDivInner{
+  font: 4em sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 6em;
+  gap: 6.5em;
 }
-.imgDiv {
-  height: 120px;
-  width: 120px;
-  border: 3px solid black;
-  border-radius: 100%;
-  background-image: url("img/doc.png") no-repeat;
-  /* background: black; */
+.bigDivInner2{
   position: relative;
-  /* align-items: center;
-    justify-content: center; */
-}
-.img {
-  height: 110px;
-  width: 90px;
-  /* background: url("img/doc.png") no-repeat; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
-
+.bigDivInner22{
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+.myImage{
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.myImage2{
+  margin: 5px;
+  border: 2px solid white;
+}
+.myImage2:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 .bodySection {
   display: flex;
   flex-direction: column;
@@ -80,6 +150,7 @@
   gap: 2em;
 }
 .bodySectionChild1 {
+  padding: 10px;
   background-color: black;
   color: white;
   height: 200px;
@@ -87,7 +158,9 @@
   border: 3px solid white;
   border-radius: 10px;
 }
+
 .bodySectionChild2 {
+  padding: 5px;
   height: 150px;
   width: 350px;
   background-color: rgb(254, 155, 7);
@@ -96,6 +169,7 @@
   border-radius: 10px;
 }
 .bodySectionChild3 {
+  padding: 5px;
   height: 150px;
   width: 350px;
   background-color: rgb(253, 46, 253);
@@ -112,7 +186,10 @@
   height: 50px;
   width: 100%;
   background-color: black;
-  border: 3px solid white;
+}
+.innerFoot{
+  border: 1px solid white;
+  border-radius: 10px;
 }
 .footerDiv1{
   display: flex;
@@ -121,4 +198,19 @@
   justify-content: space-between;
   align-items: center;
   gap: 2em;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
 }

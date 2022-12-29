@@ -1,13 +1,27 @@
-import React from 'react'
+import React from "react";
+import MyImage from "./img/logo2.jpeg";
 
 export default function BodySection() {
   return (
-    <div className='bodySection'>
-      <div className='bodySection1'>
-        <div className='bodySectionChild1'>About Me</div>
-        <div className='bodySectionChild2'>About Me</div>
-        <div className='bodySectionChild3'>About Me</div>
+    <div className="bodySection">
+      <div className="bodySection1">
+        <div className="bodySectionChild1">
+          <div className="FirstDiv1">Latest Post</div>
+          <img
+            src={MyImage}
+            alt="horse"
+            width={300}
+            // height={100}
+            className="myImage2"
+          />
+        </div>
+        <div className="bodySectionChild2">
+          <div className="FirstDiv1">Latest Project</div>
+        </div>
+        <div className="bodySectionChild3">
+          <div className="FirstDiv1">Current Project</div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
