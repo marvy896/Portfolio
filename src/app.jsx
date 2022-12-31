@@ -1,17 +1,23 @@
-import React from 'react'
+import React from "react";
 import "./index.css";
-import Nav from './nav';
-import BodySection from './bodySection'
-import Footer from './footer';
-import Body from './body';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import About from "./about";
+import Nav from "./nav";
+import Portfolio from "./portfolio";
 
 export default function App() {
   return (
     <div>
-      <Nav />
-      <Body/>
-      <BodySection />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Nav />}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }

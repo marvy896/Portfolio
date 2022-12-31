@@ -11,13 +11,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "react-router-dom": "^6.6.1",
+    "type": "module"
   },
   "dependencies": {
     "img": "^3.0.3",
     "react": "^18.2.0",
+    "react-date-object": "^2.1.5",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.6.1",
     "src": "^1.1.2"
   }
 }

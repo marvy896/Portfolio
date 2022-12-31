@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 import MyImage from "./img/logo1.jpg";
 import Twitter from "./img/twitter.png";
 import WhatsApp from "./img/whatsapp.png";
@@ -8,13 +9,17 @@ export default function Nav() {
     <div className="MainHead">
       <div className="headDiv">
         <div className="headDiv1">
-          <div className="FirstDiv">Home Page</div>
-          <div className="SecoundDiv">PortFolio</div>
+          <Link to="/">
+            <span className="FirstDiv">Home Page</span>
+          </Link>
+          <Link to="/portfolio">
+          <span className="SecoundDiv">PortFolio</span>
+          </Link>
         </div>
         <div className="contactDiv">
-          <img src={WhatsApp} width={40} height={30} className="Contact"/>
-          <img src={Twitter} width={40} height={30}  className="Contact" />
-          <img src={mail} width={40} height={30}  className="Contact" />
+          <img src={WhatsApp} width={40} height={30} className="Contact" />
+          <img src={Twitter} width={40} height={30} className="Contact" />
+          <img src={mail} width={40} height={30} className="Contact" />
         </div>
       </div>
       <div className="BigDiv">
@@ -27,9 +32,13 @@ export default function Nav() {
             <div className="FirstDiv">Home Page</div>
             <h3>Full Stack Engineer</h3>
           </div>
-          <div className="FirstDiv">Contact me</div>
+          <Link to="/about">
+            <span className="FirstDiv">About me</span>
+          </Link>
         </div>
       </div>
+      <Outlet />
     </div>
+    
   );
 }
