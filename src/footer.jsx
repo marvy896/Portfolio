@@ -12,12 +12,12 @@ export default function Footer() {
           <nav className="nav">
             <ul>
               <li>
-                <a href="#" className="active">
+                <a href="https://github.com/marvy896" className="active">
                   Github
                 </a>
               </li>
               <li>
-                <a href="#">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/marvel-onyedika-a710b7204/">LinkedIn</a>
               </li>
             </ul>
           </nav>
