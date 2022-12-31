@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 import Ecommerce from "./img/ECOMERCE.jpg";
 import Dice from "./img/Dice.jpg";
 import GameApp from "./img/gameApp.jpg";
@@ -14,29 +15,29 @@ export default function Portfolio() {
       <div>
         <div className="portfolio">
           <div className="pt">
-            <div className="FirstDiv1">E-commerce</div>
+            <a href="https://github.com/marvy896/E-commerce-Store" className="FirstDiv1">E-commerce</a>
             <img src={Ecommerce} width={150} height={100} className="Contact" />
           </div>
           <div className="pt">
-            <div className="FirstDiv1">Dice Game</div>
+            <a href="https://github.com/marvy896/Tic-Tac-Toe-Game" className="FirstDiv1">Tic Tac Toe</a>
             <img src={Dice} width={150} height={100} className="Contact" />
           </div>
           <div className="pt">
-            <div className="FirstDiv1">Pokemon</div>
+            <a href="https://github.com/marvy896/Pokemon" className="FirstDiv1">Pokemon</a>
             <img src={Pokemon} width={150} height={100} className="Contact" />
           </div>
         </div>
         <div className="portfolio">
           <div className="pt">
-            <div className="FirstDiv1">Game-App</div>
+            <a href="https://github.com/marvy896/Game-App" className="FirstDiv1">Game-App</a>
             <img src={GameApp} width={150} height={100} className="Contact" />
           </div>
           <div className="pt">
-            <div className="FirstDiv1">ToDo-List-</div>
+            <a href="https://github.com/marvy896/ToDo-List-" className="FirstDiv1">ToDo-List-</a>
             <img src={Todo} width={150} height={100} className="Contact" />
           </div>
           <div className="pt">
-            <div className="FirstDiv1">Calculator</div>
+            <a href="https://github.com/marvy896/Calculator" className="FirstDiv1">Calculator</a>
             <img src={Calculator} width={150} height={100} className="Contact" />
           </div>
         </div>

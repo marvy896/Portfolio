@@ -34,6 +34,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .Contact{
   padding: 3px;
@@ -59,9 +60,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .FirstDiv1{
   position: relative;
+  color: #fff;
   height: 30px;
   width: 150px;
   border-radius: 20px;
@@ -72,6 +75,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .FirstDiv1:hover{
   background-color: rgb(246, 246, 244);
@@ -79,7 +83,7 @@
 }
 
 .FirstDiv:hover{
-  background-color: yellow;
+  background-color: white;
   color: black;
 }
 .SecoundDiv:hover{

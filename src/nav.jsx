@@ -9,11 +9,11 @@ export default function Nav() {
     <div className="MainHead">
       <div className="headDiv">
         <div className="headDiv1">
-          <Link to="/">
-            <span className="FirstDiv">Home Page</span>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <div className="FirstDiv">Home Page</div>
           </Link>
-          <Link to="/portfolio">
-          <span className="SecoundDiv">PortFolio</span>
+          <Link to="/portfolio" style={{ textDecoration: 'none' }}>
+          <div className="SecoundDiv">PortFolio</div>
           </Link>
         </div>
         <div className="contactDiv">
@@ -32,7 +32,7 @@ export default function Nav() {
             <div className="FirstDiv">Home Page</div>
             <h3>Full Stack Engineer</h3>
           </div>
-          <Link to="/about">
+          <Link to="/about" style={{ textDecoration: 'none' }}>
             <span className="FirstDiv">About me</span>
           </Link>
         </div>
