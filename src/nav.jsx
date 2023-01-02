@@ -33,7 +33,7 @@ export default function Nav() {
             <h3>Full Stack Engineer</h3>
           </div>
           <Link to="/about" style={{ textDecoration: 'none' }}>
-            <span className="FirstDiv">About me</span>
+            <div className="FirstDiv">About me</div>
           </Link>
         </div>
       </div>
