@@ -60,6 +60,8 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  opacity: 1;
+   transition: opacity 2000ms ease-in-out;
 }
 .Contact {
   padding: 3px;

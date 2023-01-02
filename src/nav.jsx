@@ -4,9 +4,44 @@ import MyImage from "./img/logo1.jpg";
 import Twitter from "./img/twitter.png";
 import WhatsApp from "./img/whatsapp.png";
 import mail from "./img/mail.png";
-export default function Nav() {
+import { Transition } from "react-transition-group";
+
+
+  class Nav extends React.Component {
+    constructor(props) {
+      super(props);
+      this.duration = 10000;
+      this.defaultStyle = {
+        transition: `opacity ${this.duration}ms ease-in-out`,
+        opacity: 0,
+      };
+      this.transitionStyles = {
+        entering: { opacity: 1 },
+        entered: { opacity: 1 },
+        exiting: { opacity: 0 },
+        exited: { opacity: 0 },
+      };
+      this.state = {
+        inProp: true,
+      };
+      setInterval(() => {
+        this.setState((state, props) => {
+          let newState = {
+            inProp: !state.inProp,
+          };
+          return newState;
+        });
+      }, 500);
+    }
+    render() {
   return (
-    <div className="MainHead">
+    <Transition in={this.state.inProp} timeout={this.duration}>
+        {(state) => (
+    <div className="MainHead"style={{
+      ...this.defaultStyle,
+      ...this.transitionStyles[state],
+    }}
+  >
       <div className="headDiv">
         <div className="headDiv1">
           <Link to="/" style={{ textDecoration: 'none' }}>
@@ -39,6 +74,10 @@ export default function Nav() {
       </div>
       <Outlet />
     </div>
-    
-  );
+   )}
+   </Transition>
+ );
 }
+
+}
+export default Nav;
