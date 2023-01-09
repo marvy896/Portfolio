@@ -58,7 +58,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content:space-around;
+  gap: 1em;
   text-decoration: none;
   opacity: 1;
    transition: opacity 2000ms ease-in-out;
@@ -82,6 +83,7 @@
 .Contact:hover {
   background-color: yellow;
   color: black;
+  cursor: pointer;
 }
 .FirstDiv,
 .SecoundDiv {
@@ -89,6 +91,10 @@
   position: relative;
   height: 30px;
   width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5.5rem;
   border-radius: 20px;
   border-color: rgb(246, 122, 122);
   border-width: 10px;
@@ -98,6 +104,20 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+}
+.circle{
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #0b0b0b;
+  border: 2px solid white;
+}
+.circle:hover{
+  color: #0b0b0b;
+  background-color: yellow;
+  cursor: pointer;
 }
 .FirstDiv1 {
   position: relative;
@@ -113,6 +133,11 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 5px;
 }
 @media screen and (max-width: 900px) {
   .FirstDiv,
@@ -154,15 +179,18 @@
 .FirstDiv1:hover {
   background-color: rgb(246, 246, 244);
   color: black;
+  cursor: pointer;
 }
 
 .FirstDiv:hover {
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 .SecoundDiv:hover {
   background-color: rgb(250, 250, 248);
   color: black;
+  cursor: pointer;
 }
 .BigDiv {
   padding: 10px;
@@ -387,6 +415,7 @@
   height: 50px;
   width: 100%;
   background-color: black;
+  
 }
 .innerFoot {
   border: 1px solid white;
@@ -465,6 +494,7 @@
 }
 .MarvelImg:hover {
   opacity: 0.3;
+  cursor: pointer;
 }
 .about-info {
   color: #fff;
@@ -574,4 +604,65 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+@import "react-slideshow-image/dist/styles.css";
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+/* Popup style */
+.popup-box {
+  position: relative;
+  background: #00000050;
+  color: #111;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+ 
+.box {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+ 
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(5% - 20px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 15px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.portf{
+margin: 20px;
 }

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="innerFoot"></div>
       <div className="footerDiv">
       <img src={MyImage} width={40} height={30}/>
-        <h4>All Rights Reserved</h4>
+        <h4>All Rights Reserved, Made By Me!</h4>
         <div className="footerDiv1">
           <nav className="nav">
             <ul>

@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-loader-spinner": "^5.3.4",
+    "react-slideshow-image": "^4.1.1",
     "react-transition-group": "^4.4.5",
     "src": "^1.1.2"
   }
