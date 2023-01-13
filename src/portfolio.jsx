@@ -14,12 +14,12 @@ import "react-slideshow-image/dist/styles.css";
 
 export default function Portfolio() {
   const images = [
-    "./imgpage/ECOMERCE.jpg",
-    "./imgpage/Calculator.jpg",
-    "./imgpage/Dice.jpg",
-    "./imgpage/gameApp.jpg",
-    "./imgpage/Pokemon.jpg",
-    "./imgpage/Todo.jpg",
+    Ecommerce,
+    Calculator,
+    Dice,
+    GameApp,
+    Pokemon,
+    Todo,
   ];
   const [isOpen, setIsOpen] = useState(false);
 
