@@ -41,7 +41,7 @@ export default function Portfolio() {
           {isOpen && <Popup
             content={<>
               <b>About the E-Commerce Store!</b>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>The E-Commerce website was built with TypeScript, React, NodeJs, HTML and CSS. its a typical Store where Buyers can get items onlione, it has features like Carts, Search Button, Checkout pages etc.</p>
               <a href="https://github.com/marvy896/E-commerce-Store">Visit the code</a>
             </>}
             handleClose={togglePopup}
@@ -58,7 +58,7 @@ export default function Portfolio() {
           {isOpen && <Popup
             content={<>
               <b>About the Calculator App!</b>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>The Calculator was built with HTML, JavaScript and CSS. It has features to store already calculated figures, all the features of a typical calculator.</p>
               <a href="https://github.com/marvy896/Calculator">Visit the code</a>
             </>}
             handleClose={togglePopup}
@@ -74,9 +74,9 @@ export default function Portfolio() {
           />
           {isOpen && <Popup
             content={<>
-              <b>About the Dice Game!</b>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a href="https://github.com/marvy896/E-commerce-Store">Visit the code</a>
+              <b>The Tic-Tac-Toe</b>
+              <p>The Tic-Tac-Toe is a game developed with JavaScript, HTML and CSS. It can be played by two persons and its Fun!</p>
+              <a href="https://github.com/marvy896/Tic-Tac-Toe-Game">Visit the code</a>
             </>}
             handleClose={togglePopup}
           />}
@@ -92,7 +92,7 @@ export default function Portfolio() {
           {isOpen && <Popup
             content={<>
               <b>About the Games!</b>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>The Game App was Developed with JavaScript, React, HTML and CSS. It contains many games like Dice Game, MatchMaker for dating, Quiz App, Tic-Tac and TODO list etc.</p>
               <a href="https://github.com/marvy896/Game-App">Visit the code</a>
             </>}
             handleClose={togglePopup}
@@ -109,7 +109,7 @@ export default function Portfolio() {
           {isOpen && <Popup
             content={<>
               <b>About Pokemon List!</b>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>The Pokemon list was built with React, JavaScript, CSS and Html and API fetch. THe list was gotten from the Pokemon APi and it displays all the features of each Pokemon amd their images.</p>
               <a href="https://github.com/marvy896/Pokemon">Visit the code</a>
             </>}
             handleClose={togglePopup}
@@ -126,7 +126,7 @@ export default function Portfolio() {
           {isOpen && <Popup
             content={<>
               <b>About the ToDo!</b>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>The Todo was built with JavaScript, CSS and Html, it handles the work of a typical ToDo list with features of Delete, update and Create</p>
               <a href="https://github.com/marvy896/ToDo-List-">Visit the code</a>
             </>}
             handleClose={togglePopup}

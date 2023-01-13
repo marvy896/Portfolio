@@ -58,11 +58,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   gap: 1em;
   text-decoration: none;
   opacity: 1;
-   transition: opacity 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out;
 }
 .Contact {
   padding: 3px;
@@ -104,8 +104,10 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  transition: background-color 2s;
 }
-.circle{
+.circle {
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 20px;
@@ -114,10 +116,27 @@
   background-color: #0b0b0b;
   border: 2px solid white;
 }
-.circle:hover{
+.circle:hover {
   color: #0b0b0b;
   background-color: yellow;
   cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .circle {
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .circle {
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+  }
 }
 .FirstDiv1 {
   position: relative;
@@ -138,23 +157,26 @@
   justify-content: space-between;
   gap: 0.5rem;
   padding: 5px;
+  transition: background-color 2s;
 }
 @media screen and (max-width: 900px) {
   .FirstDiv,
   .SecoundDiv {
     color: #f7f8fb;
-  position: relative;
-  height: 30px;
-  width: 250px;
-  border-radius: 20px;
-  border-color: rgb(246, 122, 122);
-  border-width: 10px;
-  border-width: 2px;
-  border: double;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+    position: relative;
+    height: 30px;
+    width: 250px;
+    border-radius: 20px;
+    border-color: rgb(246, 122, 122);
+    border-width: 10px;
+    border-width: 2px;
+    border: double;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 2rem;
+    transition: background-color 2s;
   }
 }
 @media screen and (max-width: 600px) {
@@ -174,7 +196,9 @@
     justify-content: center;
     text-decoration: none;
     font-size: 12px;
-}
+    gap: 0.5rem;
+    transition: background-color 2s;
+  }
 }
 .FirstDiv1:hover {
   background-color: rgb(246, 246, 244);
@@ -188,7 +212,7 @@
   cursor: pointer;
 }
 .SecoundDiv:hover {
-  background-color: rgb(250, 250, 248);
+  background-color: rgb(240, 240, 8);
   color: black;
   cursor: pointer;
 }
@@ -196,8 +220,14 @@
   padding: 10px;
   height: 200px;
   width: 1000;
+  transition: background-color 2s;
   background: rgb(158, 154, 146);
   border-radius: 20px;
+}
+
+.BigDiv:hover {
+  background-color: #14202d;
+  color: white;
 }
 .BigDivInner {
   padding: 10px;
@@ -205,6 +235,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 6.5em;
 }
 @media screen and (max-width: 900px) {
@@ -277,6 +308,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5em;
+  
+}
+h3{
+  color: #e8460c;
 }
 @media screen and (max-width: 900px) {
   .bigDivInner22 {
@@ -292,11 +327,11 @@
 @media screen and (max-width: 600px) {
   .BigDivInner22 {
     color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: none;
   }
 }
 .myImage {
@@ -364,19 +399,19 @@
 @media screen and (max-width: 900px) {
   .bodySection1 {
     display: flex;
-    flex-direction:column;
-  position: relative;
-  gap: 2em;
-  align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 2em;
+    align-items: center;
   }
 }
 @media screen and (max-width: 600px) {
-.bodySection1 {
-  display: flex;
-  flex-direction:column;
-  position: relative;
-  gap: 2em;
-  align-items: center;
+  .bodySection1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2em;
+    align-items: center;
   }
 }
 .bodySectionChild1 {
@@ -415,7 +450,6 @@
   height: 50px;
   width: 100%;
   background-color: black;
-  
 }
 .innerFoot {
   border: 1px solid white;
@@ -428,6 +462,23 @@
   justify-content: space-between;
   align-items: center;
   gap: 2em;
+}
+@media screen and (max-width: 900px) {
+  .footerDiv,
+  .footerDiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .nav ul {
   padding: 0;
@@ -451,7 +502,7 @@
   gap: 5em;
 }
 @media screen and (max-width: 900px) {
-  .bodyDivMain  {
+  .bodyDivMain {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -459,7 +510,7 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .bodyDivMain  {
+  .bodyDivMain {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -543,25 +594,26 @@
 @media screen and (max-width: 900px) {
   .about-container {
     display: flex;
-    flex-direction:column;
-  position: relative;
-  gap: 2em;
-  align-items: center;
-  margin-top: 5px;
+    flex-direction: column;
+    position: relative;
+    gap: 2em;
+    align-items: center;
+    margin-top: 5px;
   }
 }
 @media screen and (max-width: 600px) {
-  .about-container{
-  display: flex;
-  flex-direction:column;
-  position: relative;
-  gap: 2em;
-  align-items: center;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 }
-.portfolio,h2 {
+.portfolio,
+h2 {
   padding: 5px;
   margin: 10px;
   display: flex;
@@ -571,26 +623,29 @@
   gap: 3em;
 }
 @media screen and (max-width: 900px) {
-  .portfolio, h2 {
+  .portfolio,
+  h2 {
     display: flex;
-    flex-direction:column;
-  position: relative;
-  gap: 2em;
-  align-items: center;
-  margin-top: 5px;
+    flex-direction: column;
+    position: relative;
+    gap: 2em;
+    align-items: center;
+    margin-top: 5px;
   }
 }
 @media screen and (max-width: 600px) {
-  .portfolior, h2{
-  display: flex;
-  flex-direction:column;
-  position: relative;
-  gap: 2em;
-  align-items: center;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  .portfolior,
+  h2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 }
+
 .pt {
   display: flex;
   flex-direction: column;
@@ -632,7 +687,7 @@
   top: 0;
   left: 0;
 }
- 
+
 .box {
   position: relative;
   width: 50%;
@@ -646,9 +701,9 @@
   border: 1px solid #999;
   overflow: auto;
 }
- 
+
 .close-icon {
-  content: 'x';
+  content: "x";
   cursor: pointer;
   position: fixed;
   right: calc(5% - 20px);
@@ -663,6 +718,6 @@
   font-size: 20px;
 }
 
-.portf{
-margin: 20px;
+.portf {
+  margin: 20px;
 }
