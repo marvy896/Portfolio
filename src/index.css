@@ -10,6 +10,11 @@
   box-sizing: border-box;
   background-color: rgb(8, 8, 8);
   font-family: Arial, Helvetica, sans-serif;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  from {background-color: rgb(8, 8, 8);}
+  to {background-color: rgb(19, 19, 52);}
 }
 .MainHead {
   display: flex;
@@ -146,16 +151,12 @@
   border-radius: 20px;
   border-color: rgb(249, 246, 246);
   border-width: 10px;
-  border-width: 2px;
   border: double;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 0.5rem;
   padding: 5px;
   transition: background-color 2s;
 }
@@ -396,6 +397,7 @@ h3{
   position: relative;
   gap: 2em;
 }
+
 @media screen and (max-width: 900px) {
   .bodySection1 {
     display: flex;
@@ -422,6 +424,12 @@ h3{
   width: 350px;
   border: 3px solid white;
   border-radius: 10px;
+  transition: background-color 2s;
+}
+.bodySectionChild1:hover{
+  background-color: #ff3705;
+  cursor: pointer;
+  color: black;
 }
 .bodySectionChild2 {
   padding: 5px;
@@ -431,6 +439,11 @@ h3{
   color: black;
   border: 3px solid white;
   border-radius: 10px;
+  transition: background-color 2s;
+}
+.bodySectionChild2:hover{
+  background-color: #e8460c;
+  cursor: pointer;
 }
 .bodySectionChild3 {
   padding: 5px;
@@ -440,6 +453,11 @@ h3{
   color: black;
   border: 3px solid white;
   border-radius: 10px;
+  transition: background-color 2s;
+}
+.bodySectionChild3:hover{
+  background-color: #e8460c;
+  cursor: pointer;
 }
 .footerDiv {
   display: flex;
@@ -447,9 +465,10 @@ h3{
   justify-items: center;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: auto;
   width: 100%;
   background-color: black;
+  border-radius: 10px;
 }
 .innerFoot {
   border: 1px solid white;
@@ -686,6 +705,7 @@ h2 {
   height: 100vh;
   top: 0;
   left: 0;
+  object-fit: cover;
 }
 
 .box {
@@ -700,6 +720,7 @@ h2 {
   padding: 20px;
   border: 1px solid #999;
   overflow: auto;
+  object-fit: cover;
 }
 
 .close-icon {
